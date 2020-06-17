@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/TrocoSolverAbstract.h
+
+../src/TrocoSolver.h
+vector
+-
+string
+-
+TrocoSolverAbstract.h
+-
+
+/home/caio/ITA/5_semestre/CES-12/Labs/Lab4/src/TrocoSolverDivConquer.cpp
+TrocoSolver.h
+-
+
+/home/caio/ITA/5_semestre/CES-12/Labs/Lab4/src/TrocoSolverPD.cpp
+TrocoSolver.h
+-
+

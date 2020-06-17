@@ -1,0 +1,5 @@
+if(EXISTS "/home/caio/ITA/5_semestre/CES-12/Labs/Lab4/build/labTrocotests[1]_tests.cmake")
+  include("/home/caio/ITA/5_semestre/CES-12/Labs/Lab4/build/labTrocotests[1]_tests.cmake")
+else()
+  add_test(labTrocotests_NOT_BUILT labTrocotests_NOT_BUILT)
+endif()

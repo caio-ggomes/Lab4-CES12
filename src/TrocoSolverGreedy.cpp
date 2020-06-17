@@ -1,10 +1,17 @@
 #include <TrocoSolver.h>
 
 void TrocoSolverGreedy::solve(const std::vector<unsigned int> &denom,unsigned int value, std::vector<unsigned int> &coins) {
-
-    // fills a dummy answer with 3 coins of each denomination    
-    coins.resize(denom.size(),3); 
-    
+  
+    coins.resize(denom.size(),0);
+    unsigned int change = 0;
+    unsigned int pos = denom.size();
+    for(std::vector<unsigned int>::const_reverse_iterator itr = denom.rbegin(); itr != denom.rend() && change < value; ++itr){
+        --pos;
+        while(change + *itr <= value){
+            change += *itr;
+            coins[pos]++;
+        }
+    }
     
 }//solve
 
