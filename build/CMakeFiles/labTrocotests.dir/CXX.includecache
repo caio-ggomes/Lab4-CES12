@@ -6,21 +6,17 @@
 
 #IncludeRegexTransform: 
 
-../lib/TrocoSolverAbstract.h
-
-../src/TrocoSolver.h
+../lib/SSP_Exp.h
+ostream
+-
 vector
 -
-string
--
-TrocoSolverAbstract.h
+
+../src/testesAluno.h
+SSP_Exp.h
 -
 
-/home/caio/ITA/5_semestre/CES-12/Labs/Lab4/src/TrocoSolverDivConquer.cpp
-TrocoSolver.h
--
-
-/home/caio/ITA/5_semestre/CES-12/Labs/Lab4/src/TrocoSolverPD.cpp
-TrocoSolver.h
+/home/caio/ITA/5_semestre/CES-12/Labs/Lab4/src/testesAluno.cpp
+testesAluno.h
 -
 

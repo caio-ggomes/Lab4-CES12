@@ -55,22 +55,22 @@ return SSP_Exp(
 SSP_Exp alunoTestTimed1() {
 return SSP_Exp(
         // {"DD","BB","PD"}, // DD-gabarito BB-branch&bound PD-ProgDinamic
-        {"DD"}, // choose algoritms
-        {},//{10,15}, // choose sizes. if empty, test does nothing
+        {"BB","PD"}, // choose algoritms
+        {4, 8, 12, 16, 20, 24, 28},//{10,15}, // choose sizes. if empty, test does nothing
         // possible instance generators: choose as many as you wish to test
-        {"TODD","P3","P6","P9","RAND", "EVOD","AVIS"}
+        {"P1","P2","P3","P4","P5","P6","RAND","EVOD"}
         // note: TOOD and AVIS are not random, do not need to repeat the test
-        ,3 );  // how many times to repeat the test
+        , 5);  // how many times to repeat the test
 }
 
 
 SSP_Exp alunoTestTimed2() {
 return SSP_Exp(
         // {"DD","BB","PD"}, // DD-gabarito BB-branch&bound PD-ProgDinamic
-        {"DD"}, // choose algoritms
-        {},//{10,15}, // choose sizes. if empty, test does nothing
+        {"BB","PD"}, // choose algoritms
+        {4, 8, 12, 16},//{10,15}, // choose sizes. if empty, test does nothing
         // possible instance generators: choose as many as you wish to test
-        {"TODD","P3","P6","P9","RAND", "EVOD","AVIS"}
+        {"TODD","AVIS"}
         // note: TOOD and AVIS are not random, do not need to repeat the test
-        ,3 );  // how many times to repeat the test
+        , 1);  // how many times to repeat the test
 }
